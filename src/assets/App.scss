@@ -1,1 +1,95 @@
+.pomodore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+  &-progress {
+    width: 266px;
+    padding: 30px;
+    background: linear-gradient(116.82deg, #494f74 0%, #3a3f5e 100%);
+    mix-blend-mode: normal;
+    box-shadow: -12px -12px 32px rgba(73, 80, 115, 0.72), 12px 12px 32px #2e334e,
+      inset 2px 2px 2px rgba(83, 92, 136, 0.11);
+    border-radius: 200px;
+  }
+
+  &-counters {
+    display: flex;
+    column-gap: 70px;
+    margin-bottom: 50px;
+  }
+}
+
+.minutes-counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #424869 0%, #4a5178 100%);
+  opacity: 0.95;
+  box-shadow: -6px -6px 20px rgba(85, 93, 131, 0.56),
+    8px 8px 18px rgba(54, 59, 87, 0.2),
+    inset 1px 1px 1px rgba(38, 49, 105, 0.05),
+    inset -1px -1px 4px rgba(83, 92, 136, 0.12);
+  border-radius: 21px;
+  width: 150px;
+  padding: 10px;
+
+  .button-wrapper {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+
+    .arrow {
+      cursor: pointer;
+  
+      &:hover {
+        color: #855cff;
+      }
+    }
+  }
+}
+
+.button-wrapper {
+  display: flex;
+  column-gap: 30px;
+
+  .play-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    margin-top: 40px;
+    background: linear-gradient(135deg, #424869 0%, #4a5178 100%);
+    opacity: 0.95;
+    box-shadow: -6px -6px 20px rgba(85, 93, 131, 0.56),
+      8px 8px 18px rgba(54, 59, 87, 0.2),
+      inset 1px 1px 1px rgba(38, 49, 105, 0.05),
+      inset -1px -1px 4px rgba(83, 92, 136, 0.12);
+    border-radius: 21px;
+    cursor: pointer;
+    font-size: 24px;
+
+    &:hover {
+      color: #855cff;
+    }
+  }
+}
+
+.timer-wrapper {
+  position: relative;
+
+  .timer-label {
+    position: absolute;
+    right: 78px;
+    top: 40px;
+  }
+
+  .time-left {
+    position: absolute;
+    right: 53px;
+    top: 70px;
+  }
+}
